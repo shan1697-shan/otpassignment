@@ -1,1 +1,1 @@
-web: guicorn assignment.wsgi --log-file -
+web: gunicorn assignment.wsgi --log-file
