@@ -11,8 +11,8 @@ def login(request):
             number='+91'+num
             otp = str(random.randint(100000, 999999))
             request.session['otpcarrier'] = otp
-            account_sid = 'AC4129513dd41ef681c92f1be314be3a23'
-            auth_token = '90abf24061f9d5eb96c3911c5bd5a106'
+            account_sid = 'AC412XXXXXXXXXXX'
+            auth_token = 'XXXXXXXXXXXXX'
             client = Client(account_sid, auth_token)
             message = client.messages.create(
                     body='This is a test otp '+otp+'.',
